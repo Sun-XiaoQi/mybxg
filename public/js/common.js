@@ -7,10 +7,12 @@ define(["jquery", "template", "cookie"], function ($,template) {
 
 
 	$(".aside>.navs>ul>li>a").on("click",function(){
-		alert(this);	/*为什么this打印出来是URL地址*/
-		$(this).addClass("active");
+		console.log(1);
+		console.log(this);	/*为什么this打印出来是URL地址*/
+		// $(this).addClass("active");
+		this.className="active";
 	});
-	console.log(location.pathname);
+	// console.log(location.pathname);
 
 
 	// 实现退出功能
@@ -42,7 +44,6 @@ define(["jquery", "template", "cookie"], function ($,template) {
 	// 获取用户信息，渲染在每一个页面中
 	// 将之前存在cookie中的信息取出来，当时存的json格式，所以现在要转换成对象
 	var loginInfo=$.cookie("loginInfo") && JSON.parse($.cookie("loginInfo"));
-		console.log(loginInfo);
 	if(loginInfo){
 		var loginTpl='<div class="avatar img-circle">'
             +'<img src="{{tc_avatar}}">'
