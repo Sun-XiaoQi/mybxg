@@ -1,3 +1,3 @@
-define(['jquery'],function($){
-    // alert(1);
-})
+define(["util"],function(util){
+    util.setMenu(location.pathname);
+});
