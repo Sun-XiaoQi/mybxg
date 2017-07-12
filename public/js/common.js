@@ -6,15 +6,6 @@ define(["jquery", "template", "cookie"], function ($,template) {
 	});
 
 
-	$(".aside>.navs>ul>li>a").on("click",function(){
-		console.log(1);
-		console.log(this);	/*为什么this打印出来是URL地址*/
-		// $(this).addClass("active");
-		this.className="active";
-	});
-	// console.log(location.pathname);
-
-
 	// 实现退出功能
 	$("#quit").click(function () {
 		$.ajax({
