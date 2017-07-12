@@ -5,10 +5,10 @@ require.config({
         cookie:"jquery-cookie/jquery.cookie",
         template:"artTemplate/template-web",
         bootstrap:"bootstrap/js/bootstrap.min",
-        bootstrapCss:"bootstrap/css/bootstrap.min",
-        datepickerCss:"bootstrap-datepicker/css/bootstrap-datepicker.min",
         datepickerJs:"bootstrap-datepicker/js/bootstrap-datepicker.min",
         language:"bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min",
+        validate:"validate/jquery-validate.min",
+        form:"jquery-form/jquery.form",
         common:"../js/common",
         index:"../js/index",
         login:"../js/login",
@@ -22,6 +22,9 @@ require.config({
         },
         language:{
             deps:["jquery","datepickerJs"]
+        },
+        validate:{
+            deps:["jquery"]
         }
     }
 });
