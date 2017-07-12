@@ -5,6 +5,14 @@ define(["jquery", "template", "cookie"], function ($,template) {
 		$(this).next().slideToggle();
 	});
 
+
+	$(".aside>.navs>ul>li>a").on("click",function(){
+		alert(this);	/*为什么this打印出来是URL地址*/
+		$(this).addClass("active");
+	});
+	console.log(location.pathname);
+
+
 	// 实现退出功能
 	$("#quit").click(function () {
 		$.ajax({
