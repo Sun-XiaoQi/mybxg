@@ -5,13 +5,25 @@ require.config({
         cookie:"jquery-cookie/jquery.cookie",
         template:"artTemplate/template-web",
         bootstrap:"bootstrap/js/bootstrap.min",
+        datepickerJs:"bootstrap-datepicker/js/bootstrap-datepicker.min",
+        language:"bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min",
+        validate:"validate/jquery-validate.min",
+        form:"jquery-form/jquery.form",
         common:"../js/common",
         index:"../js/index",
         login:"../js/login",
-        tealist:"../js/teacher-list"
+        tealist:"../js/teacher-list",
+        teaadd:"../js/teacher-add",
+        util:"../js/util"
     },
     shim:{
         bootstrap:{
+            deps:["jquery"]
+        },
+        language:{
+            deps:["jquery","datepickerJs"]
+        },
+        validate:{
             deps:["jquery"]
         }
     }

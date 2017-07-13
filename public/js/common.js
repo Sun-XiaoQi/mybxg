@@ -1,4 +1,4 @@
-define(["jquery", "template", "cookie"], function ($,template) {
+define(["jquery", "template", "cookie","util"], function ($,template) {
 	// 控制左侧菜单的展开与重叠
 	$('.navs ul').prev('a').on('click', function () {
 		$(this).parent().siblings("li").children("ul").slideUp();

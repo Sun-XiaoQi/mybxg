@@ -1,4 +1,5 @@
 define(["jquery","cookie"],function(){
+    
     $(".btn").click(function(){
             $.ajax({
             type:"post",
