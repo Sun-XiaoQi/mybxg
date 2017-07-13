@@ -8,7 +8,8 @@ require.config({
         common:"../js/common",
         index:"../js/index",
         login:"../js/login",
-        tealist:"../js/teacher-list"
+        tealist:"../js/teacher-list",
+        setting:"../js/setting"
     },
     shim:{
         bootstrap:{
