@@ -10,9 +10,9 @@ define(["jquery", "template", "ckeditor", "datepickerJs", "language", "validate"
             // 处理头像上传
             $('#upfile').uploadify({
                 buttonText : '',
-                itemTemplate : '<span></span>',
-                width : '120',
-                height : '120',
+                // itemTemplate : '<span></span>',
+                width : 120,
+                height : 120,
                 fileObjName : 'tc_avatar',
                 swf : '/public/assets/uploadify/uploadify.swf',
                 uploader : '/api/uploader/avatar',
@@ -21,10 +21,10 @@ define(["jquery", "template", "ckeditor", "datepickerJs", "language", "validate"
                     data = JSON.parse(data);
                     $('.preview img:eq(0)').attr('src',data.result.path);
                 },
-                onUploadError : function(file, errorCode, errorMsg, errorString) {
-                    console.log(1);
-                    alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
-                }
+                // onUploadError : function(file, errorCode, errorMsg, errorString) {
+                //     console.log(1);
+                //     alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
+                // }
             });
 
 
